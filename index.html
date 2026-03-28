@@ -1,456 +1,925 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Resume Vanessa Morales Norambuena</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Resume Vanessa Morales Norambuena Download" name="keywords">
-        <meta content="Resume Vanessa Morales Norambuena Download" name="description">
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanessa Morales Norambuena · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --surface: #ffffff;
+    --surface2: #edeae4;
+    --accent: #5b52e8;
+    --accent2: #e8526a;
+    --accent3: #2db872;
+    --text: #1a1a2e;
+    --muted: #6b6b80;
+    --border: rgba(91,82,232,0.15);
+    --glow: rgba(91,82,232,0.08);
+    --nav-bg: rgba(244,242,238,0.88);
+  }
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+  .nav-logo span { color: var(--accent); }
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="sidebar-header">
-                    <img src="img/profile.jpeg" alt="Image">
-                </div>
-                <div class="sidebar-content">
-                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">Navigation</a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About<i class="fa fa-address-card"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#experience">Experience<i class="fa fa-star"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#skill">skill<i class="fa fa-tasks"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio<i class="fa fa-file-archive"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact<i class="fa fa-envelope"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="sidebar-footer">
-                    <div class="sidebar-footer">
-                        <a href="https://github.com/vanemn" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/vanessamoralesnorambuena/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:userassenav@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>                  
-             
-                </div>
-            </div>
-            <div class="content">
-                <!-- Header Start -->
-                <div class="header" id="header">
-                    <div class="content-inner">
-                        <p>I'm</p>
-                        <h1>Vanessa Morales Norambuena</h1>
-                        <h2></h2>
-                        <div class="typed-text">Data science, Full Stack Developer, Master in Business Administration, Construction Engineering
-                            </div>
-                    </div>
-                </div>
-                <!-- Header End -->
-                
-                <!-- Large Button Start -->
-                <!-- 
-                <div class="large-btn">
-                    <div class="content-inner">
-                        <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
-                        <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
-                    </div>
-                </div>
-                Large Button End -->
-                
-                <!-- About Start -->
-                <div class="about" id="about">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>About Me</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-4 col-lg-4">
-                            <!--    <img src="" alt="Image">-->
-                            </div>
-                            <div class="col-md-8 col-lg-8">
-                                
-                            <p>Hello, I am a <strong> Data science |Full Stack Developer in training | Master in Business Administration | Construction Engineering</strong>. With extensive experience in project management and analysis, I have successfully led numerous projects, improving efficiency and sustainability.</p>
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--accent); }
 
-                            <p>My technical experience includes team management, planning and execution of complex projects, and process optimization to ensure high-quality results. These projects have endowed me with transferable skills such as solving complex problems, coordinating multidisciplinary teams, and effective time management.</p>
-                            
-                            <p>My interest in web development focuses on applying these technical and management skills to the development of web applications. I am committed to learning new technologies and frameworks to integrate digital solutions.</p>
-                            
-                            <p>Currently, I am looking for new opportunities to leverage my experience in construction and real estate and my passion for web development, contributing to innovative and sustainable projects. I am interested in bringing my analytical approach and my ability to lead projects to a visionary organization.</p>  
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- About End -->
-<!-- Education Start -->
-<div class="education" id="education">
-    <div class="content-inner">
-        <div class="content-header">
-            <h2>Education</h2>
-        </div>
-        <div class="row align-items-center">
-            <!-- Universidad Católica del Norte -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span>2018 <i>to</i> 2019</span>
-                    <h5 class="edu-institution">Universidad Católica del Norte</h5>
-                    <h3>Master of Business Administration</h3>
-                    <p>This postgraduate program focuses on developing skills and knowledge in business administration and management. It is designed to prepare students for leadership and management roles in various industries. The MBA covers a wide range of areas, including finance, marketing, human resources, operations, and business strategy.</p>
-                </div>
-            </div>
-            <!-- Pontificia Universidad Católica -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span>2013</span>
-                    <h5 class="edu-institution">Pontificia Universidad Católica de Chile</h5>
-                    <h3>Construction Project Management</h3>
-                    <p>This diploma program focuses on providing professionals with advanced knowledge and practical skills in construction project management. The program covers techniques in planning, execution, and control of projects, leadership, environmental strategies, and methods to ensure quality and efficiency in construction.</p>
-                </div>
-            </div>
-            <!-- Instituto Profesional Duoc UC -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span>2007 <i>to</i> 2011</span>
-                    <h5 class="edu-institution">Instituto Profesional Duoc UC</h5>
-                    <h3>Construction Engineering</h3>
-                    <p>This program trains professionals highly skilled in managing and executing construction projects. Graduates master advanced construction techniques, project administration, and material management. Additionally, they are trained in supervising and controlling works, ensuring compliance with current regulations and quality standards. This program emphasizes efficiency, safety, and sustainability in construction, preparing its graduates to lead projects in a globalized environment.</p>
-                </div>
-            </div>
-        </div>
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+  .nav-toggle span {
+    width: 24px; height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
 
-        <!-- Certifications Start -->
-        <div class="content-header">
-            <div class="education" id="education">
-    <div class="content-inner">
-        <div class="content-header">
-            <h3>Licenses & Certifications</h3>
-        </div>
-        <div class="row align-items-center">
-            <h3></h3>
-        </div>
-        <div class="row align-items-center">
-            <!-- Certificación futura -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span> 2025</span>
-                    <h5 class="edu-institution">Certificación en Ciencia de Datos</h5>
-                    <h3>En proceso de acreditación</h3>
-                    <p></p>
-                </div>
-            </div>
-            <!-- Talento Digital para Chile -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span> feb. 2025</span>
-                    <h5 class="edu-institution">Talento Digital para Chile</h5>
-                    <h3>Desarrollo Aplicaciones Full Stack Python Trainee</h3>
-                    <p>
-                        ID de la credencial: d256f8b5-e7b4-4185-ae7a-e8f6914a11f6<br>
-                        <a href="https://www.acreditta.com/credential/d256f8b5-e7b4-4185-ae7a-e8f6914a11f6?utm_source=copy&resource_type=badge&resource=d256f8b5-e7b4-4185-ae7a-e8f6914a11f6" target="_blank">Mostrar credencial</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Google Data Analytics -->
-            <div class="col-md-6">
-                <div class="edu-col">
-                    <span>oct. 2024</span>
-                    <h5 class="edu-institution">Google</h5>
-                    <h3>Programa especializado: Análisis de Datos</h3>
-                    <p>
-                        ID de la credencial: KYB1MTWZNFWH<br>
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/KYB1MTWZNFWH" target="_blank">Mostrar credencial</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Certifications End -->
+  /* ─── HERO ─── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+  }
+  .orb-1 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(91,82,232,0.15), transparent 70%);
+    top: -80px; right: -80px;
+    animation: float 9s ease-in-out infinite;
+  }
+  .orb-2 {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(232,82,106,0.1), transparent 70%);
+    bottom: 0; left: 15%;
+    animation: float 12s ease-in-out infinite reverse;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-28px); }
+  }
+
+  .hero-content {
+    max-width: 860px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--glow);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    font-size: 0.78rem;
+    font-family: 'DM Mono', monospace;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--accent3);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+  }
+  .hero-name .highlight {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.8rem;
+  }
+  .role-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--muted);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .hero-desc {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.85;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 20px rgba(91,82,232,0.28);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(91,82,232,0.42); }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+  /* ─── SECTIONS ─── */
+  section {
+    padding: 5.5rem 4rem;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+    color: var(--text);
+  }
+
+  .full-divider {
+    border: none;
+    border-top: 1px solid rgba(91,82,232,0.12);
+    margin: 0 4rem;
+  }
+
+  /* ─── STACK ─── */
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.9rem;
+  }
+  .stack-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 0.8rem;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .stack-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(91,82,232,0.14);
+  }
+  .stack-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
+  .stack-name { font-size: 0.75rem; font-weight: 600; color: var(--muted); }
+
+  /* ─── SOBRE MÍ ─── */
+  .about-text p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 0.9rem;
+    font-size: 0.96rem;
+    max-width: 640px;
+  }
+  .lang-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.3rem;
+  }
+  .lang-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  /* ─── FORMACIÓN ─── */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .edu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.4rem;
+    transition: all 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .edu-card:hover { border-color: rgba(91,82,232,0.35); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(91,82,232,0.1); }
+  .edu-year { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--accent2); letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+  .edu-degree { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.25rem; line-height: 1.4; color: var(--text); }
+  .edu-school { color: var(--muted); font-size: 0.78rem; }
+
+  .cert-list { display: flex; flex-direction: column; gap: 0.65rem; }
+  .cert-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.3rem;
+    transition: all 0.3s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .cert-item:hover { border-color: rgba(91,82,232,0.35); }
+  .cert-dot { width: 7px; height: 7px; background: var(--accent3); border-radius: 50%; flex-shrink: 0; }
+  .cert-name { font-size: 0.88rem; font-weight: 500; color: var(--text); }
+  .cert-org { color: var(--muted); font-size: 0.76rem; }
+  .cert-year { margin-left: auto; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); flex-shrink: 0; }
+
+  /* ─── PROYECTOS ─── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1.2rem;
+  }
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.8rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .project-card:hover { transform: translateY(-5px); border-color: rgba(91,82,232,0.35); box-shadow: 0 16px 48px rgba(0,0,0,0.1); }
+  .project-card:hover::before { transform: scaleX(1); }
+  .project-type { font-size: 0.68rem; font-family: 'DM Mono', monospace; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.8rem; }
+  .project-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; line-height: 1.3; color: var(--text); }
+  .project-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.7; margin-bottom: 1.3rem; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    background: rgba(91,82,232,0.07);
+    border: 1px solid rgba(91,82,232,0.18);
+    color: var(--accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+  }
+  .project-arrow {
+    position: absolute;
+    bottom: 1.3rem; right: 1.3rem;
+    width: 30px; height: 30px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    background: var(--surface);
+  }
+  .project-card:hover .project-arrow { background: var(--accent); border-color: var(--accent); color: white; }
+
+  /* ─── EXPERIENCIA ─── */
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--accent), transparent);
+  }
+  .timeline-item { position: relative; padding-bottom: 2.8rem; padding-left: 2rem; }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.35rem; top: 8px;
+    width: 9px; height: 9px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(91,82,232,0.15);
+  }
+  .timeline-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 0.35rem; }
+  .timeline-role { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.15rem; color: var(--text); }
+  .timeline-company { color: var(--muted); font-size: 0.84rem; font-weight: 500; margin-bottom: 0.65rem; }
+  .timeline-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.8; }
+  .timeline-desc li { list-style: none; padding-left: 1.2em; position: relative; margin-bottom: 0.25rem; }
+  .timeline-desc li::before { content: '›'; position: absolute; left: 0; color: var(--accent); }
+
+  /* ─── CONTACTO ─── */
+  #contacto { text-align: center; }
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 3.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    max-width: 680px;
+    margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(91,82,232,0.07);
+  }
+  .contact-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(91,82,232,0.06), transparent 70%);
+    pointer-events: none;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 10px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  .contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    text-align: center;
+    padding: 1.8rem 4rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    border-top: 1px solid rgba(91,82,232,0.1);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ─── REVEAL ─── */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      background: var(--nav-bg);
+      backdrop-filter: blur(20px);
+      padding: 1.5rem;
+      gap: 1.2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: flex; }
+
+    section { padding: 4rem 1.5rem; }
+    #hero { padding: 6.5rem 1.5rem 3rem; }
+    .full-divider { margin: 0 1.5rem; }
+    .contact-card { padding: 2.5rem 1.5rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    footer { padding: 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .stack-grid { grid-template-columns: repeat(3, 1fr); }
+    .hero-ctas { flex-direction: column; }
+    .btn-primary, .btn-secondary { justify-content: center; }
+    .cert-item { flex-wrap: wrap; }
+    .cert-year { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">VM<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#formacion">Formación</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Disponible para nuevas oportunidades</div>
+    <h1 class="hero-name">
+      Vanessa<br>
+      <span class="highlight">Morales N.</span>
+    </h1>
+    <div class="hero-roles">
+      <span class="role-pill">Project Manager</span>
+      <span class="role-pill">Data Analyst</span>
+      <span class="role-pill">Full Stack Python</span>
+      <span class="role-pill">Consultora</span>
     </div>
-</div>
-<!-- Education End -->
+    <p class="hero-desc">
+      Impulsando decisiones con datos · Liderando equipos con propósito.<br>
+      Años de experiencia en gestión de proyectos, ahora aplicados al mundo de los datos y la tecnología.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.33 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="1 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="1 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="1 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="1 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class="btn-secondary">
+        <svg width="1 five years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+      <a href="https://github.com/vanemn" target="_blank" class("btn-secondary"):
+        <svg width(" btn-secondary"):
+        .width = " fifteen";
+        .height = " fifteen";
+        .viewBox = " zero zero twenty four twenty four";
+        .fill = " currentColor";
+        .path = "M twelve zeroC five three seven zero zero twelvec zero five three one three four three five nine seven nine eight two zero five eleven three eight five six one zerofive sevenzero two eightfivezero one twothreezero two two threefivethree zero onefivefivefive seventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven ninefiveseventhree seven nineFive years of experience in project management, now applied to the world of data and technology.
+    </p>
+    <div class("hero-content"):
+      .class = "hero-content";
+      .childNodes = [
+        .class = "hero-tag";
+        .textContent = "Disponible para nuevas oportunidades";
+        .class = "hero-name";
+        .innerHTML = "<h one>Vanessa<br><span class=\"highlight\">Morales N.</span></h one>";
+        .class = "hero-roles";
+        .childNodes = [
+          .class = "role-pill";
+          .textContent = "Project Manager";
+          .class = "role-pill";
+          .textContent = "Data Analyst";
+          .class = "role-pill";
+          .textContent = "Full Stack Python";
+          .class = "role-pill";
+          .textContent = "Consultora"
+        ];
+        .class = "hero-desc";
+        .innerHTML = "<p>Impulsando decisiones con datos · Liderando equipos con propósito.<br>Años de experiencia en gestión de proyectos, ahora aplicados al mundo de los datos y la tecnología.</p>";
+        .class = "hero-ctas"
+      ]
+    ]
 
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/vanessamoralesnorambuena/" target="_blank" class="btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
 
-                
-                <!-- Experience Start -->
-                <!-- Experience Start -->
-                <div class="experience" id="experience">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Experience</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2018 - 2023</span>
-                                    <h3>Project Manager</h3>
-                                    <h4>Inmobiliaria Renval Spa.</h4>
-                                    <h5>IV, Chile</h5>
-                                    <p>Led the planning and execution of real estate projects, coordinating multidisciplinary teams to ensure high-quality and sustainable results. Managed budgets, optimized processes, and maintained effective communication with all stakeholders. Controlled all stages in the project life cycle.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2015 - 2018</span>
-                                    <h3>Construction Site Manager</h3>
-                                    <h4>Constructora Rencoret</h4>
-                                    <h5>IV, Chile</h5>
-                                    <p>Managed and coordinated construction projects, ensuring compliance with schedules and established budgets. Oversaw work teams, material resources, and administrative processes, maintaining smooth communication with all involved parties. My focus on efficiency and quality contributed to the success during the development processes.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2013 - 2014</span>
-                                    <h3>Construction Technical Inspector</h3>
-                                    <h4>Fundamenta Inspección Técnica</h4>
-                                    <h5>RM, Chile</h5>
-                                    <p>Supervised the project's administrative controls, including deadlines, costs, quality, and safety, ensuring compliance with payment statuses, work increases and decreases, guarantees, and settlements. Managed the administrative and technical control of the contract according to current regulations, resulting in a controlled project development. Conducted technical inspections on-site.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2011 - 2013</span>
-                                    <h3>Quality Manager</h3>
-                                    <h4>Brotec Icafal</h4>
-                                    <h5>RM, Chile</h5>
-                                    <p>Supervised and controlled the ISO 9001:2008 Quality Management System, including internal audits and compliance with follow-up and certification audits. Developed procedures, coordinated, and managed training and leveling programs for workers. Implemented technical and administrative controls of the project, ensuring compliance with deadlines, costs, and quality standards. My focus on quality and efficiency helped maintain the integrity and success of the projects.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2012</span>
-                                    <h3>Teacher</h3>
-                                    <h4>Instituto profesional Duoc UC</h4>
-                                    <h5>RM, Chile</h5>
-                                    <p>Taught evening classes in Mechanical Physics, following the established schedule and providing technical and practical knowledge for the professional development of students. My focus on providing quality and relevant education helped prepare students in this area.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>2010 - 2011</span>
-                                    <h3>Professional Internship, Technical Office Assistant</h3>
-                                    <h4>Constructora Worner S.A.</h4>
-                                    <h5>RM, Chile</h5>
-                                    <p>Conducted technical inspections of construction processes and verified processes with energy efficiency at Colegio Saint Joseph. Supported technical management and ensured compliance with quality and energy efficiency standards.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Experience End -->
+<!-- STACK -->
+<section id="stack" style="padding-top:0">
+  <p class="section-label">// tecnologías</p>
+  <div class="stack-grid reveal">
+    <div class="stack-item"><div class="stack-icon">🐍</div><div class="stack-name">Python</div></div>
+    <div class="stack-item"><div class="stack-icon">🗄️</div><div class="stack-name">SQL</div></div>
+    <div class="stack-item"><div class="stack-icon">📊</div><div class="stack-name">Power BI</div></div>
+    <div class="stack-item"><div class="stack-icon">🎯</div><div class="stack-name">Django</div></div>
+    <div class="stack-item"><div class="stack-icon">🐼</div><div class="stack-name">Pandas</div></div>
+    <div class="stack-item"><div class="stack-icon">🤖</div><div class="stack-name">Scikit-learn</div></div>
+    <div class="stack-item"><div class="stack-icon">📈</div><div class="stack-name">R</div></div>
+    <div class="stack-item"><div class="stack-icon">🐙</div><div class="stack-name">Git / GitHub</div></div>
+    <div class="stack-item"><div class="stack-icon">🌐</div><div class="stack-name">HTML/CSS/JS</div></div>
+    <div class="stack-item"><div class="stack-icon">🐘</div><div class="stack-name">PostgreSQL</div></div>
+    <div class="stack-item"><div class="stack-icon">🏆</div><div class="stack-name">ISO 9001</div></div>
+    <div class="stack-item"><div class="stack-icon">⚡</div><div class="stack-name">Metodologías Ágiles</div></div>
+  </div>
+</section>
 
-                <!-- Experience Start -->
-                
-                <!-- Skills Start -->
-                <div class="skills" id="skills">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Skills</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <i class="fa fa-code"></i>
-                                    <h3>Front End Development</h3>
-                                    <p>Proficient in HTML, CSS, JavaScript, and frameworks like bootstrap to create responsive and dynamic web pages.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <i class="fa fa-server"></i>
-                                    <h3>Back End Development</h3>
-                                    <p>Experienced in Python, Django, and databases like Postgres and SQL for robust server-side development.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <i class="fa fa-database"></i>
-                                    <h3>Database Management</h3>
-                                    <p>Skilled in managing and optimizing databases, ensuring data integrity and performance.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <i class="fa fa-project-diagram"></i>
-                                    <h3>Project Management</h3>
-                                    <p>Experienced in planning, executing, and overseeing projects to ensure timely delivery and adherence to quality standards.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills End -->
+<hr class="full-divider">
 
-                
-                <!-- Portfolio Start -->
-                <div class="portfolio" id="portfolio">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Portfolio</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <ul id="portfolio-flters">
-                                    <li data-filter="*" class="filter-active">All</li>
-                                    <li data-filter=".web-des">Repository</li>
-                                    <li data-filter=".dig-mar">Marketing</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row portfolio-container">
-                            <!-- Primer proyecto des-->
-                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-1inmuebles.png" class="img-fluid" alt="">
-                                        <a href="img/portfolio-1inmuebles.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="https://github.com/vanemn/proyecto_inmuebles" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="https://github.com/vanemn/proyecto_inmuebles">Real Estate Project <span>Web Development</span></a>
-                                    </figure>
-                                </div>
-                            </div>
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <p class="section-label">// sobre mí</p>
+  <div class="about-text reveal">
+    <h2 class="section-title">La visión de negocio<br>que los datos necesitan</h2>
+    <p>
+      Soy profesional con sólida trayectoria en gestión de proyectos, en transición activa hacia el sector tecnológico. Combino formación técnica en Python, SQL, Power BI y desarrollo web con la capacidad de leer un negocio, gestionar plazos y comunicar resultados a stakeholders.
+    </p>
+    <p>
+      Actualmente cursando Máster en Empresa y Tecnologías de la Información en la Universidad de Cantabria. Lista para sumar en equipos de producto, datos o transformación digital.
+    </p>
+    <div class="lang-badges">
+      <span class="lang-badge">Español nativo</span>
+      <span class="lang-badge">Inglés B2</span>
+      <span class="lang-badge">🚗 Carnet de conducir</span>
+      <span class="lang-badge">Permiso de trabajo UE</span>
+    </div>
+  </div>
+</section>
 
-                            <!-- Segundo proyecto des -->
-                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-2onlyflans.png" class="img-fluid" alt="">
-                                        <a href="img/portfolio-2onlyflans.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="https://github.com/vanemn/web_site_only_flans" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="https://github.com/vanemn/web_site_only_flans">onlyFlans Project <span>Web Development</span></a>
-                                    </figure>
-                                </div>
-                            </div>
+<hr class="full-divider">
 
-                            <!-- Sexto proyecto mar-->
-                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="https://github.com/vanemn/proyecto_inmuebles" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="https://github.com/vanemn/proyecto_inmuebles">Real Estate Project <span>Digital Marketing</span></a>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio End -->
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <p class="section-label">// educación</p>
+  <h2 class="section-title">Formación académica</h2>
+  <div class="edu-grid reveal">
+    <div class="edu-card">
+      <div class="edu-year">2025 – 2026 · En curso</div>
+      <div class="edu-degree">Máster en Empresa y Tecnologías de la Información</div>
+      <div class="edu-school">Universidad de Cantabria · España</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">MBA</div>
+      <div class="edu-degree">Administración de Negocios</div>
+      <div class="edu-school">Universidad Católica del Norte · Chile</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">Diplomado</div>
+      <div class="edu-degree">Gestión de Proyectos</div>
+      <div class="edu-school">Pontificia Universidad Católica · Chile</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">Ingeniería</div>
+      <div class="edu-degree">Ingeniería Civil en Construcción</div>
+      <div class="edu-school">Instituto Profesional Duoc UC · Chile</div>
+    </div>
+  </div>
 
-                
-                <!-- Contact Start -->
-                 <!-- 
-                <div class="contact" id="contact">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Contact</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <p><i class="fa fa-user"></i>Vanessa Morales</p>
-                                    <p><i class="fa fa-tag"></i>Developer</p>
-                                    <p><i class="fa fa-envelope"></i><a href="mailto:userassenav@gmail.com">userassenav@gmail.com</a></p>
-                                    <p><i class="fa fa-phone"></i><a href=""></a></p>
-                                    <p><i class="fa fa-map-marker"></i>Chile</p>
-                                    <div class="social">
+  <p class="section-label">// certificaciones</p>
+  <div class="cert-list reveal">
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div><div class="cert-name">Google Data Analytics Professional Certificate</div><div class="cert-org">Google</div></div>
+      <div class="cert-year">2024</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div><div class="cert-name">Bootcamp Ciencia de Datos</div><div class="cert-org">Talento Digital para Chile</div></div>
+      <div class="cert-year">2025</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div><div class="cert-name">Bootcamp Full Stack Python</div><div class="cert-org">Talento Digital para Chile</div></div>
+      <div class="cert-year">2024</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div><div class="cert-name">Análisis de Datos con Python y R</div><div class="cert-org">Coursera</div></div>
+      <div class="cert-year">2024</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div><div class="cert-name">Auditorías ISO 9001 / Sistemas de Gestión de Calidad</div><div class="cert-org">Bureau Veritas</div></div>
+      <div class="cert-year">–</div>
+    </div>
+  </div>
+</section>
 
-                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn" href=""><i class="fab fa-github"></i></a>
-                                        <a class="btn" href=""><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form">
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" placeholder="Your Name" />
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <input type="email" class="form-control" placeholder="Your Email" />
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject" />
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                                        </div>
-                                        <div><button class="btn" type="submit">Send Message</button></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 -->
-                <!-- Contact End -->
-                
-                <!-- Footer Start -->
-                <div class="footer">
-                    <div class="content-inner">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <p>&copy; 2024 Vanessa Morales. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer End -->
+<hr class="full-divider">
 
-            </div>
-        </div>
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <p class="section-label">// proyectos destacados</p>
+  <h2 class="section-title">Trabajo reciente</h2>
+  <div class="projects-grid">
+
+    <a href="https://github.com/vanemn" target="_blank" class="project-card reveal">
+      <div class="project-type">🔬 Data Science & ML</div>
+      <h3 class="project-title">Análisis & Modelos Predictivos</h3>
+      <p class="project-desc">EDA end-to-end con Python, ingeniería de features y modelos predictivos aplicados a datasets reales. Desde la limpieza hasta las conclusiones.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">scikit-learn</span><span class="tag">EDA</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/vanemn/proyecto_inmuebles" target="_blank" class="project-card reveal">
+      <div class="project-type">🏢 Aplicación Web Fullstack</div>
+      <h3 class="project-title">Real Estate Web App</h3>
+      <p class="project-desc">Aplicación web completa con autenticación de usuarios, gestión de propiedades y base de datos relacional. Proyecto fullstack de producción.</p>
+      <div class="project-tags">
+        <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">ORM</span><span class="tag">Python</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/vanemn/web_site_only_flans" target="_blank" class="project-card reveal">
+      <div class="project-type">🌐 Desarrollo Web</div>
+      <h3 class="project-title">OnlyFlans — Sitio Web</h3>
+      <p class="project-desc">Sitio web completo con Django, diseño responsivo y gestión de contenido. Proyecto práctico de desarrollo web moderno con backend en Python.</p>
+      <div class="project-tags">
+        <span class="tag">Django</span><span class="tag">HTML/CSS</span><span class="tag">Python</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/vanemn" target="_blank" class="project-card reveal">
+      <div class="project-type">📊 Business Intelligence</div>
+      <h3 class="project-title">Dashboards KPIs & Analytics</h3>
+      <p class="project-desc">Dashboards interactivos y visualizaciones para soporte a decisiones de negocio. Control operativo y financiero con Power BI, SQL y Python.</p>
+      <div class="project-tags">
+        <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">Python</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/vanemn" target="_blank" class="project-card reveal">
+      <div class="project-type">🏗️ Consultoría Digital</div>
+      <h3 class="project-title">Geoproyecta — Plataforma Digital</h3>
+      <p class="project-desc">Fundación y desarrollo de dashboards para Geoproyecta.cl, combinando ciencia de datos con gestión de proyectos para clientes del sector construcción.</p>
+      <div class="project-tags">
+        <span class="tag">Power BI</span><span class="tag">Python</span><span class="tag">Gestión</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/vanemn?tab=repositories" target="_blank" class="project-card reveal">
+      <div class="project-type">📁 Ver todos</div>
+      <h3 class="project-title">Explorar repositorios →</h3>
+      <p class="project-desc">Más de 70 repositorios en GitHub con proyectos de ciencia de datos, desarrollo web, análisis exploratorio y automatización.</p>
+      <div class="project-tags">
+        <span class="tag">github.com/vanemn</span>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="full-divider">
+
+<!-- EXPERIENCIA -->
+<section id="experiencia">
+  <p class="section-label">// trayectoria profesional</p>
+  <h2 class="section-title">Experiencia</h2>
+  <div class="timeline reveal">
+
+    <div class="timeline-item">
+      <div class="timeline-date">~1 año · España – Chile</div>
+      <div class="timeline-role">Project Manager · Data Analyst – Freelance</div>
+      <div class="timeline-company">Geoproyecta (Consultora)</div>
+      <ul class="timeline-desc">
+        <li>Gestión end-to-end en proyectos de digitalización: definición de alcance, planificación y entrega.</li>
+        <li>Diseño de dashboards de KPIs en Power BI para control operativo y financiero de clientes.</li>
+        <li>Análisis exploratorio de datos (EDA) y modelos predictivos con Python para soporte estratégico.</li>
+        <li>Fundación y desarrollo de Geoproyecta.cl combinando ciencia de datos y gestión de proyectos.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">~4 años · Chile</div>
+      <div class="timeline-role">Jefe de Proyectos</div>
+      <div class="timeline-company">Inmobiliaria Renval SpA</div>
+      <ul class="timeline-desc">
+        <li>Dirección de proyectos complejos en todas las fases del ciclo de vida con equipos multidisciplinares.</li>
+        <li>Gestión de presupuestos y control de costos con reporting ejecutivo a stakeholders clave.</li>
+        <li>Implementación de KPIs y cuadros de mando para tomar decisiones basadas en datos.</li>
+        <li>Optimización de procesos internos con impacto directo en la rentabilidad de los proyectos.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">~4 años · Chile</div>
+      <div class="timeline-role">Administrador de Proyecto</div>
+      <div class="timeline-company">Constructora Rencoret</div>
+      <ul class="timeline-desc">
+        <li>Reducción del 10% en costos mediante análisis de datos y negociación estratégica con proveedores.</li>
+        <li>Elaboración de contratos, cronogramas y control presupuestario bajo entornos de alta exigencia.</li>
+        <li>Análisis de datos operativos para identificar desviaciones y proponer mejoras de proceso.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">~3 años · Chile</div>
+      <div class="timeline-role">Responsable de Calidad y Procesos</div>
+      <div class="timeline-company">Brotec Icafal · Fundamenta Inspección Técnica</div>
+      <ul class="timeline-desc">
+        <li>Implementación y control del Sistema de Gestión de Calidad ISO 9001.</li>
+        <li>Auditorías internas, estandarización de procesos y coordinación de formación técnica.</li>
+        <li>Inspección técnica de proyectos y relación con proveedores y certificaciones.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<hr class="full-divider">
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <p class="section-label" style="text-align:center">// contacto</p>
+  <div class="contact-card reveal">
+    <h2 class="section-title" style="margin-bottom:0.8rem">¿Trabajamos juntos?</h2>
+    <p style="color:var(--muted); max-width:460px; margin:0 auto; font-size:0.92rem; line-height:1.85;">
+      Disponible para oportunidades en equipos de producto, datos o transformación digital. ¡Hablemos!
+    </p>
+    <div class="contact-links">
+      <a href="mailto:vane.moralesn@gmail.com" class="contact-link">
+        ✉ vane.moralesn@gmail.com
+      </a>
+      <a href="https://github.com/vanemn" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        github.com/vanemn
+      </a>
+      <a href="https://www.linkedin.com/in/vanessamoralesnorambuena/" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vanessa Morales Norambuena · <a href="https://github.com/vanemn" style="color:var(--accent); text-decoration:none;">github.com/vanemn</a></p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 70);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Hamburger menu
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
 </html>
